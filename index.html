@@ -14,6 +14,22 @@
     .fade-in {
       animation: fadeInUp 0.8s ease forwards;
     }
+	.project-image {
+      position: relative;
+      overflow: hidden;
+    }
+    .gif-hover {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      object-fit: cover;
+    }
+    .project-image:hover .gif-hover,
+    .project-image:focus-within .gif-hover {
+      opacity: 1;
+    }
   </style>
 </head>
 <body class="bg-gray-900 text-white font-sans">
@@ -50,40 +66,46 @@
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="bg-gray-800 py-12">
-    <div class="container mx-auto px-6">
-      <h3 class="text-3xl font-semibold mb-8">Projects</h3>
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        
-        <!-- Project Card -->
-        <div class="bg-gray-700 rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 fade-in">
-          <img src="https://via.placeholder.com/600x400" alt="Project Image" class="w-full">
-          <div class="p-6">
-            <h4 class="text-xl font-bold mb-2">RotZone: Crimson Outbreak</h4>
-            <p class="text-gray-300 text-sm mb-4">
-              A fast-paced first-person zombie shooter inspired by ULTRAKILL, featuring a score-based progression system and surreal urban environments.
-            </p>
-            <p class="text-xs text-gray-400 mb-4">Tech Stack: C++, OpenGL, ReactPhysics3D, ECS</p>
-            <a href="https://itch.io" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">View on itch.io</a>
-          </div>
-        </div>
+	<section id="projects" class="bg-gray-800 py-12">
+		<div class="container mx-auto px-6">
+		  <h3 class="text-3xl font-semibold mb-8">Projects</h3>
+		  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-        <!-- Project Card -->
-        <div class="bg-gray-700 rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 fade-in">
-          <img src="https://via.placeholder.com/600x400" alt="Project Image" class="w-full">
-          <div class="p-6">
-            <h4 class="text-xl font-bold mb-2">Sky Harbinger</h4>
-            <p class="text-gray-300 text-sm mb-4">
-              A prototype for flying enemy AI, featuring smooth chase mechanics and dynamic collision detection.
-            </p>
-            <p class="text-xs text-gray-400 mb-4">Tech Stack: C++, OpenGL, ECS, Custom AI System</p>
-            <a href="https://itch.io" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">View on itch.io</a>
-          </div>
-        </div>
+			<!-- Project Card -->
+			<div class="bg-gray-700 rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 fade-in">
+			  <div class="project-image">
+				<img src="https://placehold.co/600x400" alt="Static Screenshot" class="w-full">
+				<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOThzbTFobm9pc2t6M3dpajF3ZXE4Z3Q5MXl2em85NjI3bDhzZ3p2diZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xT0xeJpnrWC4XWblEk/giphy.gif" alt="Gameplay GIF" class="gif-hover">
+			  </div>
+			  <div class="p-6">
+				<h4 class="text-xl font-bold mb-2">RotZone: Crimson Outbreak</h4>
+				<p class="text-gray-300 text-sm mb-4">
+				  A fast-paced first-person zombie shooter inspired by ULTRAKILL, featuring score-based progression and surreal urban environments.
+				</p>
+				<p class="text-xs text-gray-400 mb-4">Tech Stack: C++, OpenGL, ReactPhysics3D, ECS</p>
+				<a href="https://itch.io" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">View on itch.io</a>
+			  </div>
+			</div>
 
-      </div>
-    </div>
-  </section>
+			<!-- Another Project -->
+			<div class="bg-gray-700 rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 fade-in">
+			  <div class="project-image">
+				<img src="https://placehold.co/600x400" alt="Static Screenshot" class="w-full">
+				<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDUzNGNmOWY5MTFiZjJmZTVkZDE0OTc1ZmZlOWM2YjcwN2VhMGRhMiZjdD1n/26ufdipQqU2lhNA4g/giphy.gif" alt="Gameplay GIF" class="gif-hover">
+			  </div>
+			  <div class="p-6">
+				<h4 class="text-xl font-bold mb-2">Sky Harbinger</h4>
+				<p class="text-gray-300 text-sm mb-4">
+				  A prototype for flying enemy AI, with smooth chase mechanics and dynamic collision detection.
+				</p>
+				<p class="text-xs text-gray-400 mb-4">Tech Stack: C++, OpenGL, ECS, Custom AI System</p>
+				<a href="https://itch.io" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">View on itch.io</a>
+			  </div>
+			</div>
+
+		  </div>
+		</div>
+	  </section>
 
   <!-- Contact -->
   <section id="contact" class="container mx-auto px-6 py-12 fade-in">
