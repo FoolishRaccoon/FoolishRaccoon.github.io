@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Developer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Smooth fade-in animation */
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeInUp 0.8s ease forwards;
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+  <!-- Header -->
+  <header class="bg-gray-800 shadow-lg sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold">Your Name</h1>
+      <nav class="space-x-6">
+        <a href="#about" class="hover:text-blue-400 transition">About</a>
+        <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+        <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-blue-600 to-purple-700 py-16 text-center">
+    <h2 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm a Game Developer</h2>
+    <p class="max-w-2xl mx-auto text-lg opacity-90">
+      I create fast-paced, visually striking games with a strong focus on gameplay mechanics and technical polish.
+    </p>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="container mx-auto px-6 py-12 fade-in">
+    <h3 class="text-3xl font-semibold mb-6">About Me</h3>
+    <div class="md:flex gap-8 items-center">
+      <img src="https://via.placeholder.com/300" alt="Profile" class="rounded-2xl shadow-lg w-full md:w-1/3">
+      <p class="text-gray-300 leading-relaxed md:w-2/3">
+        I'm an aspiring game developer with experience in C++, OpenGL, and ECS architecture. I enjoy building gameplay systems from scratch and solving technical challenges that push the player experience to the next level.
+        Currently, I'm looking for an internship position where I can contribute my skills and grow as part of a passionate development team.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="bg-gray-800 py-12">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-semibold mb-8">Projects</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Project Card -->
+        <div class="bg-gray-700 rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 fade-in">
+          <img src="https://via.placeholder.com/600x400" alt="Project Image" class="w-full">
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2">RotZone: Crimson Outbreak</h4>
+            <p class="text-gray-300 text-sm mb-4">
+              A fast-paced first-person zombie shooter inspired by ULTRAKILL, featuring a score-based progression system and surreal urban environments.
+            </p>
+            <p class="text-xs text-gray-400 mb-4">Tech Stack: C++, OpenGL, ReactPhysics3D, ECS</p>
+            <a href="https://itch.io" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">View on itch.io</a>
+          </div>
+        </div>
+
+        <!-- Project Card -->
+        <div class="bg-gray-700 rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 fade-in">
+          <img src="https://via.placeholder.com/600x400" alt="Project Image" class="w-full">
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2">Sky Harbinger</h4>
+            <p class="text-gray-300 text-sm mb-4">
+              A prototype for flying enemy AI, featuring smooth chase mechanics and dynamic collision detection.
+            </p>
+            <p class="text-xs text-gray-400 mb-4">Tech Stack: C++, OpenGL, ECS, Custom AI System</p>
+            <a href="https://itch.io" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">View on itch.io</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="container mx-auto px-6 py-12 fade-in">
+    <h3 class="text-3xl font-semibold mb-6">Contact</h3>
+    <p class="mb-4 text-gray-300">
+      You can reach me at <a href="mailto:your.email@example.com" class="text-blue-400 underline">your.email@example.com</a> or use the form below:
+    </p>
+    <form class="grid gap-4 max-w-xl">
+      <input type="text" placeholder="Your Name" class="p-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <input type="email" placeholder="Your Email" class="p-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <textarea placeholder="Your Message" rows="5" class="p-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      <button class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg transition">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-6 mt-12 text-center text-gray-500 text-sm">
+    © 2025 Your Name – Game Developer Portfolio
+  </footer>
+</body>
+</html>
