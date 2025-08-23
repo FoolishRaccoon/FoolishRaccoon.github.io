@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Game Developer Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Game Dev Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    /* Smooth fade-in animation */
     @keyframes fadeInUp {
       0% { opacity: 0; transform: translateY(20px); }
       100% { opacity: 1; transform: translateY(0); }
     }
-    .fade-in {
-      animation: fadeInUp 0.8s ease forwards;
-    }
-	.project-image {
-      position: relative;
-      overflow: hidden;
-    }
+    .fade-in { animation: fadeInUp 0.8s ease forwards; }
+    /* GIF Hover effect */
+    .project-image { position: relative; overflow: hidden; }
     .gif-hover {
       position: absolute;
       top: 0; left: 0;
@@ -33,6 +28,7 @@
   </style>
 </head>
 <body class="bg-gray-900 text-white font-sans">
+
   <!-- Header -->
   <header class="bg-gray-800 shadow-lg sticky top-0 z-50">
     <div class="container mx-auto px-6 py-4 flex justify-between items-center">
@@ -40,6 +36,7 @@
       <nav class="space-x-6">
         <a href="#about" class="hover:text-blue-400 transition">About</a>
         <a href="#projects" class="hover:text-blue-400 transition">Projects</a>
+        <a href="#skills" class="hover:text-blue-400 transition">Skills</a>
         <a href="#contact" class="hover:text-blue-400 transition">Contact</a>
       </nav>
     </div>
@@ -49,7 +46,7 @@
   <section class="bg-gradient-to-r from-blue-600 to-purple-700 py-16 text-center">
     <h2 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm a Game Developer</h2>
     <p class="max-w-2xl mx-auto text-lg opacity-90">
-      I create fast-paced, visually striking games with a strong focus on gameplay mechanics and technical polish.
+      I create fast-paced, visually striking games with a strong focus on gameplay mechanics, performance, and technical polish.
     </p>
   </section>
 
@@ -59,53 +56,83 @@
     <div class="md:flex gap-8 items-center">
       <img src="https://via.placeholder.com/300" alt="Profile" class="rounded-2xl shadow-lg w-full md:w-1/3">
       <p class="text-gray-300 leading-relaxed md:w-2/3">
-        I'm an aspiring game developer with experience in C++, OpenGL, and ECS architecture. I enjoy building gameplay systems from scratch and solving technical challenges that push the player experience to the next level.
-        Currently, I'm looking for an internship position where I can contribute my skills and grow as part of a passionate development team.
+        I'm an aspiring game developer with experience in C++, OpenGL, and ECS architecture.
+        I enjoy building gameplay systems from scratch and tackling technical challenges that push player experiences forward.
+        Currently, I'm seeking an internship where I can contribute to a passionate development team and refine my skills.
       </p>
     </div>
   </section>
 
   <!-- Projects -->
-	<section id="projects" class="bg-gray-800 py-12">
-		<div class="container mx-auto px-6">
-		  <h3 class="text-3xl font-semibold mb-8">Projects</h3>
-		  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+  <section id="projects" class="bg-gray-800 py-12">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-semibold mb-8">Projects</h3>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-			<!-- Project Card -->
-			<div class="bg-gray-700 rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 fade-in">
-			  <div class="project-image">
-				<img src="https://placehold.co/600x400" alt="Static Screenshot" class="w-full">
-				<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExOThzbTFobm9pc2t6M3dpajF3ZXE4Z3Q5MXl2em85NjI3bDhzZ3p2diZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xT0xeJpnrWC4XWblEk/giphy.gif" alt="Gameplay GIF" class="gif-hover">
-			  </div>
-			  <div class="p-6">
-				<h4 class="text-xl font-bold mb-2">RotZone: Crimson Outbreak</h4>
-				<p class="text-gray-300 text-sm mb-4">
-				  A fast-paced first-person zombie shooter inspired by ULTRAKILL, featuring score-based progression and surreal urban environments.
-				</p>
-				<p class="text-xs text-gray-400 mb-4">Tech Stack: C++, OpenGL, ReactPhysics3D, ECS</p>
-				<a href="https://itch.io" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">View on itch.io</a>
-			  </div>
-			</div>
+        <!-- Project Card -->
+        <div class="bg-gray-700 rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 fade-in">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/600x400?text=Static+Screenshot" alt="Static Screenshot" class="w-full">
+            <img src="https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif" alt="Gameplay GIF" class="gif-hover">
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2">RotZone: Crimson Outbreak</h4>
+            <p class="text-gray-300 text-sm mb-4">
+              A fast-paced first-person zombie shooter inspired by ULTRAKILL, featuring score-based progression and surreal urban environments.
+            </p>
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-2 mt-4">
+              <a href="#skills" class="bg-blue-500 text-white text-xs px-2 py-1 rounded-full hover:opacity-80">C++</a>
+              <a href="#skills" class="bg-green-500 text-white text-xs px-2 py-1 rounded-full hover:opacity-80">OpenGL</a>
+              <a href="#skills" class="bg-purple-500 text-white text-xs px-2 py-1 rounded-full hover:opacity-80">ReactPhysics3D</a>
+              <a href="#skills" class="bg-orange-500 text-white text-xs px-2 py-1 rounded-full hover:opacity-80">ECS Architecture</a>
+            </div>
+            <a href="https://itch.io" target="_blank" class="inline-block mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">View on itch.io</a>
+          </div>
+        </div>
 
-			<!-- Another Project -->
-			<div class="bg-gray-700 rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 fade-in">
-			  <div class="project-image">
-				<img src="https://placehold.co/600x400" alt="Static Screenshot" class="w-full">
-				<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZDUzNGNmOWY5MTFiZjJmZTVkZDE0OTc1ZmZlOWM2YjcwN2VhMGRhMiZjdD1n/26ufdipQqU2lhNA4g/giphy.gif" alt="Gameplay GIF" class="gif-hover">
-			  </div>
-			  <div class="p-6">
-				<h4 class="text-xl font-bold mb-2">Sky Harbinger</h4>
-				<p class="text-gray-300 text-sm mb-4">
-				  A prototype for flying enemy AI, with smooth chase mechanics and dynamic collision detection.
-				</p>
-				<p class="text-xs text-gray-400 mb-4">Tech Stack: C++, OpenGL, ECS, Custom AI System</p>
-				<a href="https://itch.io" target="_blank" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">View on itch.io</a>
-			  </div>
-			</div>
+        <!-- Another Project -->
+        <div class="bg-gray-700 rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition duration-300 fade-in">
+          <div class="project-image">
+            <img src="https://via.placeholder.com/600x400?text=Static+Screenshot" alt="Static Screenshot" class="w-full">
+            <img src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif" alt="Gameplay GIF" class="gif-hover">
+          </div>
+          <div class="p-6">
+            <h4 class="text-xl font-bold mb-2">Sky Harbinger</h4>
+            <p class="text-gray-300 text-sm mb-4">
+              A prototype for flying enemy AI with smooth chase mechanics and dynamic collision detection.
+            </p>
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-2 mt-4">
+              <a href="#skills" class="bg-blue-500 text-white text-xs px-2 py-1 rounded-full hover:opacity-80">C++</a>
+              <a href="#skills" class="bg-green-500 text-white text-xs px-2 py-1 rounded-full hover:opacity-80">OpenGL</a>
+              <a href="#skills" class="bg-orange-500 text-white text-xs px-2 py-1 rounded-full hover:opacity-80">ECS Architecture</a>
+              <a href="#skills" class="bg-yellow-500 text-white text-xs px-2 py-1 rounded-full hover:opacity-80">Custom AI</a>
+            </div>
+            <a href="https://itch.io" target="_blank" class="inline-block mt-4 bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg transition">View on itch.io</a>
+          </div>
+        </div>
 
-		  </div>
-		</div>
-	  </section>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Overview -->
+  <section id="skills" class="bg-gray-900 py-12">
+    <div class="container mx-auto px-6">
+      <h3 class="text-3xl font-semibold mb-6">Skills</h3>
+      <div class="flex flex-wrap gap-3">
+        <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm">C++</span>
+        <span class="bg-blue-500 text-white px-3 py-1 rounded-full text-sm">C#</span>
+        <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">OpenGL</span>
+        <span class="bg-green-500 text-white px-3 py-1 rounded-full text-sm">Unity</span>
+        <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-sm">ReactPhysics3D</span>
+        <span class="bg-purple-500 text-white px-3 py-1 rounded-full text-sm">GLTF</span>
+        <span class="bg-orange-500 text-white px-3 py-1 rounded-full text-sm">ECS Architecture</span>
+        <span class="bg-yellow-500 text-white px-3 py-1 rounded-full text-sm">Custom AI</span>
+      </div>
+    </div>
+  </section>
 
   <!-- Contact -->
   <section id="contact" class="container mx-auto px-6 py-12 fade-in">
