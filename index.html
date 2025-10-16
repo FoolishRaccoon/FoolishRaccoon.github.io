@@ -55,7 +55,7 @@
 
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="project-grid">
 
-        <!-- CARD TEMPLATE (repeated) -->
+        <!-- CARD 1 -->
         <div class="project-card bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl" data-tags="C++,OpenGL,ECS">
           <div class="relative group">
             <img src="https://via.placeholder.com/400x250?text=RotZone" alt="RotZone Screenshot" class="w-full h-56 object-cover group-hover:hidden">
@@ -65,23 +65,101 @@
             <h4 class="text-xl font-semibold mb-1">RotZone: Crimson Outbreak</h4>
             <p class="text-sm text-red-400 mb-2 font-semibold">Work in Progress</p>
             <p class="text-gray-400 text-sm mb-4">
-              A brutal first-person shooter featuring score-based progression and a local competitive scoreboard.
+              A brutal first-person doom shooter, featuring score-based progression and a local compatitive scoreboard.
             </p>
             <div class="flex flex-wrap gap-2 mb-4">
               <span class="bg-blue-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">C++</span>
               <span class="bg-green-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">OpenGL</span>
               <span class="bg-purple-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">ECS</span>
             </div>
-            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io →</a>
+            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io → https://foolishraccoon.itch.io/rotzone-crimson-outbreak</a>
           </div>
         </div>
 
-        <!-- COPY ALL OTHER CARDS HERE AND ADD "project-card" CLASS TO EACH -->
-        <!-- (CCTB, Bonk!, Child Delivery Service, Brambleborn) -->
+        <!-- CARD 2 -->
+        <div class="project-card bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl" data-tags="C++,AI,Pathfinding">
+          <div class="relative group">
+            <img src="https://via.placeholder.com/400x250?text=CCTB+-+Spatial+Agents" alt="CCTB Screenshot" class="w-full h-56 object-cover group-hover:hidden">
+            <img src="https://media.giphy.com/media/l0MYFJyNP0W1JzSgI/giphy.gif" alt="CCTB GIF" class="w-full h-56 object-cover hidden group-hover:block">
+          </div>
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-2">CCTB – Spatial Agents</h4>
+            <p class="text-gray-400 text-sm mb-4">
+              Experimental AI simulation where autonomous agents navigate user-built binary spaces using A*-pathfinding and Unity's physics engine.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-blue-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">C++</span>
+              <span class="bg-yellow-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">AI</span>
+              <span class="bg-orange-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Pathfinding</span>
+            </div>
+            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io → https://foolishraccoon.itch.io/cctb-spatial-agents</a>
+          </div>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="project-card bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl" data-tags="Unity,C#,Multiplayer">
+          <div class="relative group">
+            <img src="https://via.placeholder.com/400x250?text=Bonk!" alt="Bonk Screenshot" class="w-full h-56 object-cover group-hover:hidden">
+            <img src="https://media.giphy.com/media/xTiTnqUxyWbsAXq7Ju/giphy.gif" alt="Bonk GIF" class="w-full h-56 object-cover hidden group-hover:block">
+          </div>
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-2">Bonk!</h4>
+            <p class="text-gray-400 text-sm mb-4">
+              2D Platformer in which you can hit projectiles to send them flying.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-yellow-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Unity</span>
+              <span class="bg-red-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">C#</span>
+              <span class="bg-pink-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Multiplayer</span>
+            </div>
+            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io → https://foolishraccoon.itch.io/bonk</a>
+          </div>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="project-card bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl" data-tags="Unity,C#,Prototype">
+          <div class="relative group">
+            <img src="https://via.placeholder.com/400x250?text=Child+Delivery+Service" alt="CDS Screenshot" class="w-full h-56 object-cover group-hover:hidden">
+            <img src="https://media.giphy.com/media/fAnEC88LccN7a/giphy.gif" alt="CDS GIF" class="w-full h-56 object-cover hidden group-hover:block">
+          </div>
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-2">Child Delivery Service</h4>
+            <p class="text-gray-400 text-sm mb-4">
+              A darkly comedic prototype where you deliver a kid through Platforming challenges. Built for the 48h Franken GameJam 2023.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-yellow-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Unity</span>
+              <span class="bg-red-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">C#</span>
+              <span class="bg-gray-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Prototype</span>
+            </div>
+            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io → https://mrb0h.itch.io/child-delivery-service</a>
+          </div>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="project-card bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl" data-tags="C++,OpenGL,Procedural Generation">
+          <div class="relative group">
+            <img src="https://via.placeholder.com/400x250?text=Brambleborn" alt="Brambleborn Screenshot" class="w-full h-56 object-cover group-hover:hidden">
+            <img src="https://media.giphy.com/media/3o6nURjzY3mQ7dC9RC/giphy.gif" alt="Brambleborn GIF" class="w-full h-56 object-cover hidden group-hover:block">
+          </div>
+          <div class="p-4">
+            <h4 class="text-xl font-semibold mb-2">Brambleborn</h4>
+            <p class="text-gray-400 text-sm mb-4">
+              Top-Down strategic combat game, which was programmed with a group of about 20 people for a Uni course.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="bg-blue-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">C++</span>
+              <span class="bg-green-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">OpenGL</span>
+              <span class="bg-teal-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Procedural Generation</span>
+            </div>
+            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io → https://nashi1337.itch.io/brambleborn</a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
-
+  
   <!-- SKILLS -->
   <section id="skills" class="py-16">
     <div class="container mx-auto px-6">
