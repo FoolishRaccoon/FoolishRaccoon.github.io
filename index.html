@@ -6,7 +6,15 @@
   <title>Game Dev Portfolio – Marc</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    .hidden { display: none; }
+    .fade-enter {
+      opacity: 0;
+      transform: scale(0.98);
+      transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+    .fade-enter-active {
+      opacity: 1;
+      transform: scale(1);
+    }
   </style>
 </head>
 <body class="font-sans antialiased">
@@ -16,15 +24,16 @@
     <div class="container mx-auto flex justify-between items-center py-4 px-6">
       <h1 class="text-2xl font-bold text-blue-400">Marc’s Portfolio</h1>
       <nav class="space-x-6 text-gray-300">
+		<a href="#about" class="hover:text-blue-400">Projects</a>
         <a href="#projects" class="hover:text-blue-400">Projects</a>
         <a href="#skills" class="hover:text-blue-400">Skills</a>
-        <a href="#about" class="hover:text-blue-400">About</a>
+        <a href="#contact" class="hover:text-blue-400">Contact</a>
       </nav>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="text-center py-16">
+  <section id="about" class="text-center py-16">
     <h2 class="text-4xl font-bold mb-4">Hi, I'm Marc</h2>
     <p class="text-gray-400 max-w-xl mx-auto">
       Aspiring Game Developer passionate about creating technically-driven gameplay.
@@ -64,7 +73,7 @@
               <span class="bg-green-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">OpenGL</span>
               <span class="bg-purple-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">ECS</span>
             </div>
-            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io →</a>
+            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io → https://foolishraccoon.itch.io/rotzone-crimson-outbreak</a>
           </div>
         </div>
 
@@ -84,7 +93,7 @@
               <span class="bg-yellow-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">AI</span>
               <span class="bg-orange-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Pathfinding</span>
             </div>
-            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io →</a>
+            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io → https://foolishraccoon.itch.io/cctb-spatial-agents</a>
           </div>
         </div>
 
@@ -104,7 +113,7 @@
               <span class="bg-red-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">C#</span>
               <span class="bg-pink-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Multiplayer</span>
             </div>
-            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io →</a>
+            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io → https://foolishraccoon.itch.io/bonk</a>
           </div>
         </div>
 
@@ -124,7 +133,7 @@
               <span class="bg-red-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">C#</span>
               <span class="bg-gray-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Prototype</span>
             </div>
-            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io →</a>
+            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io → https://mrb0h.itch.io/child-delivery-service</a>
           </div>
         </div>
 
@@ -144,7 +153,7 @@
               <span class="bg-green-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">OpenGL</span>
               <span class="bg-teal-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Procedural Generation</span>
             </div>
-            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io →</a>
+            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io → https://nashi1337.itch.io/brambleborn</a>
           </div>
         </div>
 
@@ -191,16 +200,37 @@
     © 2025 Marc | Built with Tailwind CSS
   </footer>
 
-  <!-- JS -->
+   <!-- JS -->
   <script>
-    // Tag Filter System
     const tags = document.querySelectorAll('.filter-tag');
+    const resetBtn = document.getElementById('resetFilter');
+    const cards = document.querySelectorAll('.project-card');
+
     tags.forEach(tag => {
       tag.addEventListener('click', () => {
         const filter = tag.innerText.trim();
-        document.querySelectorAll('#project-grid > div').forEach(card => {
-          card.style.display = card.dataset.tags.includes(filter) ? 'block' : 'none';
+        cards.forEach(card => {
+          const match = card.dataset.tags.includes(filter);
+          card.style.opacity = '0';
+          setTimeout(() => {
+            card.style.display = match ? 'block' : 'none';
+            if (match) {
+              card.classList.add('fade-enter');
+              setTimeout(() => card.classList.add('fade-enter-active'), 10);
+              setTimeout(() => card.classList.remove('fade-enter', 'fade-enter-active'), 300);
+            }
+            card.style.opacity = '1';
+          }, 200);
         });
+      });
+    });
+
+    resetBtn.addEventListener('click', () => {
+      cards.forEach(card => {
+        card.style.display = 'block';
+        card.classList.add('fade-enter');
+        setTimeout(() => card.classList.add('fade-enter-active'), 10);
+        setTimeout(() => card.classList.remove('fade-enter', 'fade-enter-active'), 300);
       });
     });
   </script>
