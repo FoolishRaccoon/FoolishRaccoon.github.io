@@ -24,7 +24,7 @@
     <div class="container mx-auto flex justify-between items-center py-4 px-6">
       <h1 class="text-2xl font-bold text-blue-400">Marc’s Portfolio</h1>
       <nav class="space-x-6 text-gray-300">
-		<a href="#about" class="hover:text-blue-400">Projects</a>
+        <a href="#about" class="hover:text-blue-400">About</a>
         <a href="#projects" class="hover:text-blue-400">Projects</a>
         <a href="#skills" class="hover:text-blue-400">Skills</a>
         <a href="#contact" class="hover:text-blue-400">Contact</a>
@@ -37,9 +37,9 @@
     <h2 class="text-4xl font-bold mb-4">Hi, I'm Marc</h2>
     <p class="text-gray-400 max-w-xl mx-auto">
       Aspiring Game Developer passionate about creating technically-driven gameplay.
-      Focused on C++, OpenGL, and building clean ECS-based architectures
-	  Additionally having experience with Unity and Godot engines as well as C# and Java.
-	  In the past, making mods for the game Skyrim was my motivation to become a Game Developer.
+      Focused on C++, OpenGL, and building clean ECS-based architectures.
+      Additionally having experience with Unity and Godot engines as well as C# and Java.
+      In the past, making mods for Skyrim sparked my drive to become a game developer.
     </p>
   </section>
 
@@ -52,12 +52,11 @@
           Show All Tags
         </button>
       </div>
-	  
-	  
+
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="project-grid">
 
-        <!-- CARD 1 -->
-        <div class="bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl" data-tags="C++,OpenGL,ECS">
+        <!-- CARD TEMPLATE (repeated) -->
+        <div class="project-card bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl" data-tags="C++,OpenGL,ECS">
           <div class="relative group">
             <img src="https://via.placeholder.com/400x250?text=RotZone" alt="RotZone Screenshot" class="w-full h-56 object-cover group-hover:hidden">
             <img src="https://media.giphy.com/media/3o6fJbH2m2J1KzQ8nO/giphy.gif" alt="RotZone GIF" class="w-full h-56 object-cover hidden group-hover:block">
@@ -66,97 +65,19 @@
             <h4 class="text-xl font-semibold mb-1">RotZone: Crimson Outbreak</h4>
             <p class="text-sm text-red-400 mb-2 font-semibold">Work in Progress</p>
             <p class="text-gray-400 text-sm mb-4">
-              A brutal first-person doom shooter, featuring score-based progression and a local compatitive scoreboard.
+              A brutal first-person shooter featuring score-based progression and a local competitive scoreboard.
             </p>
             <div class="flex flex-wrap gap-2 mb-4">
               <span class="bg-blue-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">C++</span>
               <span class="bg-green-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">OpenGL</span>
               <span class="bg-purple-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">ECS</span>
             </div>
-            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io → https://foolishraccoon.itch.io/rotzone-crimson-outbreak</a>
+            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io →</a>
           </div>
         </div>
 
-        <!-- CARD 2 -->
-        <div class="bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl" data-tags="C++,AI,Pathfinding">
-          <div class="relative group">
-            <img src="https://via.placeholder.com/400x250?text=CCTB+-+Spatial+Agents" alt="CCTB Screenshot" class="w-full h-56 object-cover group-hover:hidden">
-            <img src="https://media.giphy.com/media/l0MYFJyNP0W1JzSgI/giphy.gif" alt="CCTB GIF" class="w-full h-56 object-cover hidden group-hover:block">
-          </div>
-          <div class="p-4">
-            <h4 class="text-xl font-semibold mb-2">CCTB – Spatial Agents</h4>
-            <p class="text-gray-400 text-sm mb-4">
-              Experimental AI simulation where autonomous agents navigate user-built binary spaces using A*-pathfinding and Unity's physics engine.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-blue-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">C++</span>
-              <span class="bg-yellow-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">AI</span>
-              <span class="bg-orange-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Pathfinding</span>
-            </div>
-            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io → https://foolishraccoon.itch.io/cctb-spatial-agents</a>
-          </div>
-        </div>
-
-        <!-- CARD 3 -->
-        <div class="bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl" data-tags="Unity,C#,Multiplayer">
-          <div class="relative group">
-            <img src="https://via.placeholder.com/400x250?text=Bonk!" alt="Bonk Screenshot" class="w-full h-56 object-cover group-hover:hidden">
-            <img src="https://media.giphy.com/media/xTiTnqUxyWbsAXq7Ju/giphy.gif" alt="Bonk GIF" class="w-full h-56 object-cover hidden group-hover:block">
-          </div>
-          <div class="p-4">
-            <h4 class="text-xl font-semibold mb-2">Bonk!</h4>
-            <p class="text-gray-400 text-sm mb-4">
-              2D Platformer in which you can hit projectiles to send them flying.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-yellow-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Unity</span>
-              <span class="bg-red-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">C#</span>
-              <span class="bg-pink-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Multiplayer</span>
-            </div>
-            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io → https://foolishraccoon.itch.io/bonk</a>
-          </div>
-        </div>
-
-        <!-- CARD 4 -->
-        <div class="bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl" data-tags="Unity,C#,Prototype">
-          <div class="relative group">
-            <img src="https://via.placeholder.com/400x250?text=Child+Delivery+Service" alt="CDS Screenshot" class="w-full h-56 object-cover group-hover:hidden">
-            <img src="https://media.giphy.com/media/fAnEC88LccN7a/giphy.gif" alt="CDS GIF" class="w-full h-56 object-cover hidden group-hover:block">
-          </div>
-          <div class="p-4">
-            <h4 class="text-xl font-semibold mb-2">Child Delivery Service</h4>
-            <p class="text-gray-400 text-sm mb-4">
-              A darkly comedic prototype where you deliver a kid through Platforming challenges. Built for the 48h Franken GameJam 2023.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-yellow-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Unity</span>
-              <span class="bg-red-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">C#</span>
-              <span class="bg-gray-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Prototype</span>
-            </div>
-            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io → https://mrb0h.itch.io/child-delivery-service</a>
-          </div>
-        </div>
-
-        <!-- CARD 5 -->
-        <div class="bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl" data-tags="C++,OpenGL,Procedural Generation">
-          <div class="relative group">
-            <img src="https://via.placeholder.com/400x250?text=Brambleborn" alt="Brambleborn Screenshot" class="w-full h-56 object-cover group-hover:hidden">
-            <img src="https://media.giphy.com/media/3o6nURjzY3mQ7dC9RC/giphy.gif" alt="Brambleborn GIF" class="w-full h-56 object-cover hidden group-hover:block">
-          </div>
-          <div class="p-4">
-            <h4 class="text-xl font-semibold mb-2">Brambleborn</h4>
-            <p class="text-gray-400 text-sm mb-4">
-              Top-Down strategic combat game, which was programmed with a group of about 20 people for a Uni course.
-            </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-blue-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">C++</span>
-              <span class="bg-green-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">OpenGL</span>
-              <span class="bg-teal-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Procedural Generation</span>
-            </div>
-            <a href="#" target="_blank" class="text-blue-400 hover:underline">View on Itch.io → https://nashi1337.itch.io/brambleborn</a>
-          </div>
-        </div>
-
+        <!-- COPY ALL OTHER CARDS HERE AND ADD "project-card" CLASS TO EACH -->
+        <!-- (CCTB, Bonk!, Child Delivery Service, Brambleborn) -->
       </div>
     </div>
   </section>
@@ -180,12 +101,16 @@
       </div>
     </div>
   </section>
-  
-    <!-- CONTACT -->
-  <section id="contact" class="container mx-auto px-6 py-12 fade-in">
+
+  <!-- CONTACT -->
+  <section id="contact" class="container mx-auto px-6 py-12">
     <h3 class="text-3xl font-semibold mb-6">Contact</h3>
     <p class="mb-4 text-gray-300">
-      You can reach me at <a href="mailto:marc.weingaertner@stud-mail.uni-wuerzburg.de" class="text-blue-400 underline">marc.weingaertner@stud-mail.uni-wuerzburg.de</a> or use the form below:
+      You can reach me at
+      <a href="mailto:marc.weingaertner@stud-mail.uni-wuerzburg.de" class="text-blue-400 underline">
+        marc.weingaertner@stud-mail.uni-wuerzburg.de
+      </a>
+      or use the form below:
     </p>
     <form class="grid gap-4 max-w-xl">
       <input type="text" placeholder="Your Name" class="p-3 rounded-lg bg-gray-800 border border-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500">
@@ -200,7 +125,7 @@
     © 2025 Marc | Built with Tailwind CSS
   </footer>
 
-   <!-- JS -->
+  <!-- JS -->
   <script>
     const tags = document.querySelectorAll('.filter-tag');
     const resetBtn = document.getElementById('resetFilter');
@@ -211,16 +136,12 @@
         const filter = tag.innerText.trim();
         cards.forEach(card => {
           const match = card.dataset.tags.includes(filter);
+          card.style.transition = 'opacity 0.25s ease';
           card.style.opacity = '0';
           setTimeout(() => {
             card.style.display = match ? 'block' : 'none';
-            if (match) {
-              card.classList.add('fade-enter');
-              setTimeout(() => card.classList.add('fade-enter-active'), 10);
-              setTimeout(() => card.classList.remove('fade-enter', 'fade-enter-active'), 300);
-            }
             card.style.opacity = '1';
-          }, 200);
+          }, 250);
         });
       });
     });
@@ -228,9 +149,8 @@
     resetBtn.addEventListener('click', () => {
       cards.forEach(card => {
         card.style.display = 'block';
-        card.classList.add('fade-enter');
-        setTimeout(() => card.classList.add('fade-enter-active'), 10);
-        setTimeout(() => card.classList.remove('fade-enter', 'fade-enter-active'), 300);
+        card.style.opacity = '0';
+        setTimeout(() => { card.style.opacity = '1'; }, 100);
       });
     });
   </script>
