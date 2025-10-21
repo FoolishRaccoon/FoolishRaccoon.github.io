@@ -46,7 +46,7 @@
           <!-- CARD 1 -->
           <div
             class="project-card bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl w-80 h-[500px] flex flex-col"
-            data-tags="C++,OpenGL,ECS">
+            data-tags="C/C++,OpenGL,ECS">
             <div class="relative group h-56">
               <img
                 src="https://img.itch.zone/aW1hZ2UvMzcyMDg0Ni8yMjE0NTc0Mi5wbmc=/original/eDLRrs.png"
@@ -62,7 +62,7 @@
               <p
                 class="text-sm text-red-400 mb-2 font-semibold text-center">Work in Progress</p>
               <p class="text-gray-400 text-sm mb-4">
-                Action packed first-person movement game, featuring a speed based score and a local scoreboard for friendly rivalty. I made a 
+                Action packed first-person movement game, featuring a speed based score and a local scoreboard for friendly rivalry. I made a 
                 custom Engine utilizing ECS and Event System for this game.
               </p>
               <div class="flex flex-wrap gap-2 mb-4 justify-center">
@@ -81,7 +81,7 @@
           <!-- CARD 2 -->
           <div
             class="project-card bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl w-80 h-[500px] flex flex-col"
-            data-tags="C++,AI,Pathfinding">
+            data-tags="Unity,C#,Agents,Pathfinding">
             <div class="relative group h-56">
               <img
                 src="https://img.itch.zone/aW1hZ2UvMzkyOTY2Mi8yMzQzMzY3MS5wbmc=/original/YQClOk.png"
@@ -95,9 +95,9 @@
             <div class="p-4 flex flex-col justify-between flex-grow">
               <h4 class="text-xl font-semibold mb-2 text-center">CCTB – Spatial Agents</h4>
               <p class="text-gray-400 text-sm mb-4">
-                Experimental AI simulation where autonomous agents navigate
-                user-built binary spaces using A*-pathfinding and Unity's
-                physics engine.
+                Experimental AI simulation tool where autonomous agents navigate
+                user-built binary spaces using pathfinding and Unity's
+                physics engine. This was a partner project.
               </p>
               <div class="flex flex-wrap gap-2 mb-4 justify-center">
                 <span
@@ -117,7 +117,7 @@
           <!-- CARD 3 -->
           <div
             class="project-card bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl w-80 h-[500px] flex flex-col"
-            data-tags="Unity,C#,Multiplayer">
+            data-tags="Unity,C#,Level-Design">
             <div class="relative group h-56">
               <img
                 src="https://img.itch.zone/aW1nLzIyODY4ODUzLnBuZw==/original/AwlOwf.png"
@@ -132,7 +132,7 @@
               <h4 class="text-xl font-semibold mb-2 text-center">Bonk!</h4>
               <p class="text-gray-400 text-sm mb-4">
                 2D Platformer in which you can hit projectiles to send them
-                flying. Defeating enemies or going faster through levels increases your score.
+                flying. Defeating enemies or going fast through levels increases your score, so you can compete with your friends. This was a partner project.
               </p>
               <div class="flex flex-wrap gap-2 mb-4 justify-center">
                 <span
@@ -150,7 +150,7 @@
           <!-- CARD 4 -->
           <div
             class="project-card bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl w-80 h-[500px] flex flex-col"
-            data-tags="Unity,C#,Prototype">
+            data-tags="Unity,C#">
             <div class="relative group h-56">
               <img
                 src="https://img.itch.zone/aW1nLzEzOTMzNTk5LnBuZw==/original/XDo4wC.png"
@@ -180,7 +180,7 @@
           <!-- CARD 5 -->
           <div
             class="project-card bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl w-80 h-[500px] flex flex-col"
-            data-tags="C++,OpenGL,Procedural Generation">
+            data-tags="Godot,C#,Audio-System">
             <div class="relative group h-56">
               <img src="https://via.placeholder.com/400x250?text=Brambleborn"
                 alt="Brambleborn Screenshot"
@@ -195,7 +195,7 @@
                 class="text-xl font-semibold mb-2 text-center">Brambleborn</h4>
               <p class="text-gray-400 text-sm mb-4">
                 Top-Down strategic combat game, featuring characters with individual playstyles. It was developed with a
-                group of 20 people. Each person had their individual role, mine was to integrate the sounds and musik into the game.
+                group of 20 people. Each person had their individual role. Mine was to integrate the sounds and musik into the game.
               </p>
               <div class="flex flex-wrap gap-2 mb-4 justify-center">
                 <span
@@ -290,28 +290,40 @@
       const cards = document.querySelectorAll('.project-card');
 
 
+      // Clean filtering logic with case-insensitive matching
       tags.forEach(tag => {
         tag.addEventListener('click', () => {
-          const filter = tag.innerText.trim();
+          const filter = tag.innerText.trim().toLowerCase();
           cards.forEach(card => {
-            const tags = card.dataset.tags.split(',').map(t => t.trim());
-            const match = tags.includes(filter);
-            card.style.transition = 'opacity 0.25s ease';
+            const tagList = card.dataset.tags
+            .split(',')
+            .map(t => t.trim().toLowerCase());
+
+
+            const match = tagList.includes(filter);
+            card.style.transition = 'opacity 0.25s ease, transform 0.25s ease';
             card.style.opacity = '0';
+            card.style.transform = 'scale(0.98)';
+
+
             setTimeout(() => {
-              card.style.display = match ? 'block' : 'none';
+              card.style.display = match ? 'flex' : 'none';
               card.style.opacity = '1';
+              card.style.transform = 'scale(1)';
             }, 250);
           });
         });
       });
 
 
+      // Reset button - show all cards again
       resetBtn.addEventListener('click', () => {
         cards.forEach(card => {
-          card.style.display = 'block';
+          card.style.display = 'flex';
           card.style.opacity = '0';
-          setTimeout(() => { card.style.opacity = '1'; }, 100);
+          setTimeout(() => {
+            card.style.opacity = '1';
+          }, 100);
         });
       });
     </script>
