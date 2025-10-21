@@ -38,41 +38,35 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects"
-      class="py-16 bg-gray-800 w-full flex flex-col items-center">
-      <div class="max-w-6xl w-full px-6 text-center">
-        <div class="flex justify-between items-center mb-8">
-          <h3 class="text-3xl font-semibold mb-4">Projects</h3>
-        </div>
-              
+    <section id="projects" class="py-16 bg-gray-800 w-full flex flex-col items-center">
+<div class="max-w-6xl w-full px-6 flex flex-col items-center">
+<h3 class="text-3xl font-semibold mb-8 text-center">Projects</h3>
 
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center"
-          id="project-grid">
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 place-items-center" id="project-grid">
 
           <!-- CARD 1 -->
-          <div
-            class="project-card bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl"
+          <div class="project-card bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl w-80 h-[500px] flex flex-col"
             data-tags="C++,OpenGL,ECS">
-            <div class="relative group">
+            <div class="relative group h-56">
               <img src="https://via.placeholder.com/400x250?text=RotZone"
                 alt="RotZone Screenshot"
-                class="w-full h-56 object-cover group-hover:hidden">
-              <img
-                src="https://media.giphy.com/media/3o6fJbH2m2J1KzQ8nO/giphy.gif"
+                class="w-full h-full object-cover group-hover:hidden">
+              <img src="https://media.giphy.com/media/3o6fJbH2m2J1KzQ8nO/giphy.gif"
                 alt="RotZone GIF"
-                class="w-full h-56 object-cover hidden group-hover:block">
+                class="w-full h-full object-cover hidden group-hover:block">
             </div>
-            <div class="p-4">
-              <h4 class="text-xl font-semibold mb-1">RotZone: Crimson
+            <div class="p-4 flex flex-col justify-between flex-grow">
+              <h4 class="text-xl font-semibold mb-2 text-center">RotZone: Crimson
                 Outbreak</h4>
-              <p class="text-sm text-red-400 mb-2 font-semibold">Work in
+              <p class="text-sm text-red-400 mb-2 font-semibold text-center">Work in
                 Progress</p>
               <p class="text-gray-400 text-sm mb-4">
                 A brutal first-person doom shooter, featuring score-based
                 progression and a local compatitive scoreboard. Built with
                 custom Engine utilizing ECS and Event System.
               </p>
-              <div class="flex flex-wrap gap-2 mb-4">
+              <div class="flex flex-wrap gap-2 mb-4 justify-center">
                 <span
                   class="bg-yellow-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">C/C++</span>
                 <span
@@ -80,34 +74,33 @@
                 <span
                   class="bg-purple-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">ECS</span>
               </div>
-              <a href="https://foolishraccoon.itch.io/rotzone-crimson-outbreak"
-                target="_blank" class="text-blue-400 hover:underline">View on
+              <a href="https://foolishraccoon.itch.io/rotzone-crimson-outbreak" class="text-blue-400 hover:underline text-center">View on
                 Itch.io</a>
             </div>
           </div>
 
           <!-- CARD 2 -->
           <div
-            class="project-card bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl"
+            class="project-card bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl w-80 h-[500px] flex flex-col"
             data-tags="C++,AI,Pathfinding">
-            <div class="relative group">
+            <div class="relative group h-56">
               <img
                 src="https://via.placeholder.com/400x250?text=CCTB+-+Spatial+Agents"
                 alt="CCTB Screenshot"
-                class="w-full h-56 object-cover group-hover:hidden">
+                class="w-full h-full object-cover group-hover:hidden">
               <img
                 src="https://media.giphy.com/media/l0MYFJyNP0W1JzSgI/giphy.gif"
                 alt="CCTB GIF"
-                class="w-full h-56 object-cover hidden group-hover:block">
+                class="w-full h-full object-cover hidden group-hover:block">
             </div>
-            <div class="p-4">
-              <h4 class="text-xl font-semibold mb-2">CCTB – Spatial Agents</h4>
+            <div class="p-4 flex flex-col justify-between flex-grow">
+              <h4 class="text-xl font-semibold mb-2 text-center">CCTB – Spatial Agents</h4>
               <p class="text-gray-400 text-sm mb-4">
                 Experimental AI simulation where autonomous agents navigate
                 user-built binary spaces using A*-pathfinding and Unity's
                 physics engine.
               </p>
-              <div class="flex flex-wrap gap-2 mb-4">
+              <div class="flex flex-wrap gap-2 mb-4 justify-center">
                 <span
                   class="bg-gray-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Unity</span>
                 <span
@@ -118,31 +111,30 @@
                   class="bg-orange-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Pathfinding</span>
               </div>
               <a href="https://foolishraccoon.itch.io/cctb-spatial-agents"
-                target="_blank" class="text-blue-400 hover:underline">View on
-                Itch.io</a>
+                class="text-blue-400 hover:underline text-center">View on Itch.io</a>
             </div>
           </div>
 
           <!-- CARD 3 -->
           <div
-            class="project-card bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl"
+            class="project-card bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl w-80 h-[500px] flex flex-col"
             data-tags="Unity,C#,Multiplayer">
-            <div class="relative group">
+            <div class="relative group h-56">
               <img src="https://via.placeholder.com/400x250?text=Bonk!"
                 alt="Bonk Screenshot"
-                class="w-full h-56 object-cover group-hover:hidden">
+                class="w-full h-full object-cover group-hover:hidden">
               <img
                 src="https://media.giphy.com/media/xTiTnqUxyWbsAXq7Ju/giphy.gif"
                 alt="Bonk GIF"
-                class="w-full h-56 object-cover hidden group-hover:block">
+                class="w-full h-full object-cover hidden group-hover:block">
             </div>
-            <div class="p-4">
-              <h4 class="text-xl font-semibold mb-2">Bonk!</h4>
+            <div class="p-4 flex flex-col justify-between flex-grow">
+              <h4 class="text-xl font-semibold mb-2 text-center">Bonk!</h4>
               <p class="text-gray-400 text-sm mb-4">
                 2D Platformer in which you can hit projectiles to send them
                 flying.
               </p>
-              <div class="flex flex-wrap gap-2 mb-4">
+              <div class="flex flex-wrap gap-2 mb-4 justify-center">
                 <span
                   class="bg-gray-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Unity</span>
                 <span
@@ -151,62 +143,62 @@
                   class="bg-pink-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Level
                   Design</span>
               </div>
-              <a href="https://foolishraccoon.itch.io/bonk" target="_blank"
-                class="text-blue-400 hover:underline">View on Itch.io</a>
+              <a href="https://foolishraccoon.itch.io/bonk"
+                class="text-blue-400 hover:underline text-center">View on Itch.io</a>
             </div>
           </div>
 
           <!-- CARD 4 -->
           <div
-            class="project-card bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl"
+            class="project-card bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl w-80 h-[500px] flex flex-col"
             data-tags="Unity,C#,Prototype">
-            <div class="relative group">
+            <div class="relative group h-56">
               <img
                 src="https://via.placeholder.com/400x250?text=Child+Delivery+Service"
                 alt="CDS Screenshot"
-                class="w-full h-56 object-cover group-hover:hidden">
+                class="w-full h-full object-cover group-hover:hidden">
               <img src="https://media.giphy.com/media/fAnEC88LccN7a/giphy.gif"
                 alt="CDS GIF"
-                class="w-full h-56 object-cover hidden group-hover:block">
+                class="w-full h-full object-cover hidden group-hover:block">
             </div>
-            <div class="p-4">
-              <h4 class="text-xl font-semibold mb-2">Child Delivery Service</h4>
+            <div class="p-4 flex flex-col justify-between flex-grow">
+              <h4 class="text-xl font-semibold mb-2 text-center">Child Delivery Service</h4>
               <p class="text-gray-400 text-sm mb-4">
                 A darkly comedic prototype where you deliver a kid through
                 Platforming challenges. Built for the 48h Franken GameJam 2023.
               </p>
-              <div class="flex flex-wrap gap-2 mb-4">
+              <div class="flex flex-wrap gap-2 mb-4 justify-center">
                 <span
                   class="bg-gray-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Unity</span>
                 <span
                   class="bg-red-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">C#</span>
               </div>
               <a href="https://mrb0h.itch.io/child-delivery-service"
-                target="_blank" class="text-blue-400 hover:underline">View on
+                class="text-blue-400 hover:underline text-center">View on
                 Itch.io</a>
             </div>
           </div>
 
           <!-- CARD 5 -->
           <div
-            class="project-card bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl"
+            class="project-card bg-gray-700 rounded-xl shadow-lg overflow-hidden transition transform hover:-translate-y-2 hover:shadow-2xl w-80 h-[500px] flex flex-col"
             data-tags="C++,OpenGL,Procedural Generation">
-            <div class="relative group">
+            <div class="relative group h-56">
               <img src="https://via.placeholder.com/400x250?text=Brambleborn"
                 alt="Brambleborn Screenshot"
-                class="w-full h-56 object-cover group-hover:hidden">
+                class="w-full h-full object-cover group-hover:hidden">
               <img
                 src="https://media.giphy.com/media/3o6nURjzY3mQ7dC9RC/giphy.gif"
                 alt="Brambleborn GIF"
-                class="w-full h-56 object-cover hidden group-hover:block">
+                class="w-full h-full object-cover hidden group-hover:block">
             </div>
-            <div class="p-4">
-              <h4 class="text-xl font-semibold mb-2">Brambleborn</h4>
+            <div class="p-4 flex flex-col justify-between flex-grow">
+              <h4 class="text-xl font-semibold mb-2 text-center">Brambleborn</h4>
               <p class="text-gray-400 text-sm mb-4">
                 Top-Down strategic combat game, which was programmed with a
                 group of about 20 people for a Uni course.
               </p>
-              <div class="flex flex-wrap gap-2 mb-4">
+              <div class="flex flex-wrap gap-2 mb-4 justify-center">
                 <span
                   class="bg-blue-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Godot</span>
                 <span
@@ -215,16 +207,15 @@
                   class="bg-teal-500 text-xs px-2 py-1 rounded cursor-pointer filter-tag">Audio
                   System</span>
               </div>
-              <a href="https://nashi1337.itch.io/brambleborn" target="_blank"
-                class="text-blue-400 hover:underline">View on Itch.io</a>
+              <a href="https://nashi1337.itch.io/brambleborn"
+                class="text-blue-400 bold hover:underline text-center">View on Itch.io</a>
             </div>
           </div>
 
         </div>
 
-        <button id="resetFilter"
-            class="bg-gray-700 hover:bg-blue-500 transition-colors px-4 py-2 rounded text-sm">
-            Show All Tags
+        <button id="resetFilter" class="bg-gray-700 hover:bg-blue-500 transition-colors px-4 py-2 rounded text-sm text-center mx-auto">
+          Show All Tags
         </button>
 
       </div>
