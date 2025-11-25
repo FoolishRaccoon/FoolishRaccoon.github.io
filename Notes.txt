@@ -6,3 +6,16 @@ Zum Beispiel: ich bin marc und ich brenne für skyrim modding.
 Dann Projekte und tech stack.
 
 Dann "Text wand" mit mehr details...
+
+
+
+ALTER HERO
+
+	<!-- HERO -->
+    <section id="intro"
+      class="text-center py-16 w-full flex flex-col items-center">
+      <h2 class="text-4xl font-bold mb-4">Hi, I'm Marc Weingärtner</h2>
+      <p class="mb-4 text-gray-300">
+		and i love developing games of all kinds of genres.
+      </p>
+    </section>
