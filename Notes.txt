@@ -1,11 +1,28 @@
-Portfolio Notes:
+Anschreiben:
+CryTek
+Chasing Carrots
+Yager Development
+Mad about Pandas
+Piranha Bytes
+Toadman Interactive
+Take two
+id Software
+Realmforge Studios
+Gaming minds studios
+Blue Byte (???)
+Private Division
+blargis3d@gmail.com
 
-Header nur ganz kurzer text im dem inhalt was mich motiviert.
-Zum Beispiel: ich bin marc und ich brenne für skyrim modding.
 
-Dann Projekte und tech stack.
-
-Dann "Text wand" mit mehr details...
+Inhalte von mail:
+- Studiere GE in WÜ Deutschland
+- Pflicht praktikum muss gemacht werden
+- dauert 480h (3 monate vollzeit) / (6 monate teilzeit)
+- würde gerne bei euch machen weil...
+- Hab portfolio mit projekten und teaser zu folgendem:
+- Arbeite an engine für krasses game und möchte dafür mehr lernen oder so
+- Würde mich auf zusammenarbeit freuen
+- Uni bietet hilfe zu Praktikums zeug (falls die keine ahnung haben) (nicht zur last fallen)
 
 
 
