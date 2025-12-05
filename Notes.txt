@@ -1,15 +1,15 @@
 Anschreiben:
-CryTek
-Chasing Carrots
+X CryTek
+- Chasing Carrots
 Yager Development
 Mad about Pandas
 Piranha Bytes
 Toadman Interactive
 Take two
-id Software
+X id Software
 Realmforge Studios
 Gaming minds studios
-Blue Byte (???)
+Blue Byte (???) https://www.ubisoft.com/en-us/company/careers/search/744000094361810-engine-programmer-assistant-internship-6-month-march-2026-w-m-nb-
 Private Division
 blargis3d@gmail.com
 
@@ -24,6 +24,20 @@ Inhalte von mail:
 - Würde mich auf zusammenarbeit freuen
 - Uni bietet hilfe zu Praktikums zeug (falls die keine ahnung haben) (nicht zur last fallen)
 
+
+Beispiel Formulierung, direkt, knapp kein Schnickschnack:
+Sehr geehrte Damen und Herren,
+
+derzeit bin ich auf der Suche nach einem Praktikumsplatz im Bereich Spieleentwicklung. Ich studiere Games Engineering an der Universität Würzburg und habe dort bereits mehrere Projekte umgesetzt, die Sie in meinem Portfolio einsehen können: https://foolishraccoon.github.io/
+
+Das Praktikum ist ein verpflichtender Bestandteil meines Studiums und umfasst mindestens 480 Stunden, wahlweise in drei Monaten Vollzeit oder sechs Monaten Teilzeit. Gerne bleibe ich darüber hinaus länger bei Ihnen, sofern dies von Ihrer Seite möglich ist.
+
+Da mein Studienort etwas weiter entfernt liegt, wäre eine Tätigkeit mit Remote-Anteil für mich ideal. Ich bin jedoch flexibel und richte mich gerne nach Ihren Anforderungen.
+
+Sollten Sie weitere Unterlagen oder Informationen benötigen, lasse ich Ihnen diese selbstverständlich umgehend zukommen.
+
+Mit besten Grüßen
+Marc Weingärtner
 
 
 ALTER HERO
